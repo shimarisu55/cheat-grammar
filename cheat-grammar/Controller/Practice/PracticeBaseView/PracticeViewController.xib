@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PracticeViewController" customModule="cheat_grammar" customModuleProvider="target">
+            <connections>
+                <outlet property="adBannerView" destination="Xid-sQ-ifi" id="xn1-x8-dxF"/>
+                <outlet property="answerView" destination="uPE-fz-axI" id="mDq-ME-Rue"/>
+                <outlet property="exampleQuestionView" destination="mxa-c0-bSv" id="b2D-fN-1Xd"/>
+                <outlet property="practiceFooterView" destination="EPs-ct-X1F" id="fEW-vr-kPF"/>
+                <outlet property="tableView" destination="7rw-ei-wOx" id="cgJ-Vn-0iP"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mxa-c0-bSv" customClass="ExampleQuestionView" customModule="cheat_grammar" customModuleProvider="target">
+                    <rect key="frame" x="20" y="64" width="374" height="338"/>
+                    <color key="backgroundColor" name="CustomYellow"/>
+                </view>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.69999999999999996" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="uPE-fz-axI">
+                    <rect key="frame" x="43" y="69" width="328" height="328"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="uPE-fz-axI" secondAttribute="height" multiplier="1:1" id="Ypd-Uj-l14"/>
+                    </constraints>
+                </imageView>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="7rw-ei-wOx">
+                    <rect key="frame" x="20" y="422" width="374" height="300"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" priority="250" constant="300" id="mMj-XW-T4t"/>
+                    </constraints>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="6jV-2s-DfP"/>
+                        <outlet property="delegate" destination="-1" id="WST-fk-FnP"/>
+                    </connections>
+                </tableView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EPs-ct-X1F" customClass="PracticeFooterView" customModule="cheat_grammar" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="732" width="414" height="70"/>
+                    <color key="backgroundColor" name="CustomBlack"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="70" id="FNy-ef-S7b"/>
+                    </constraints>
+                    <viewLayoutGuide key="safeArea" id="cyc-PG-f79"/>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Xid-sQ-ifi" customClass="AdBannerView" customModule="cheat_grammar" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="802" width="414" height="60"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="60" id="QvL-dy-SUt"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" name="CustomBlack"/>
+            <constraints>
+                <constraint firstItem="Xid-sQ-ifi" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" id="4Qw-vd-kZJ"/>
+                <constraint firstItem="EPs-ct-X1F" firstAttribute="top" secondItem="7rw-ei-wOx" secondAttribute="bottom" constant="10" id="7X4-KD-xhs"/>
+                <constraint firstItem="7rw-ei-wOx" firstAttribute="centerX" secondItem="mxa-c0-bSv" secondAttribute="centerX" id="Cp1-59-H2Y"/>
+                <constraint firstAttribute="trailing" secondItem="EPs-ct-X1F" secondAttribute="trailing" id="Fut-aT-Q0d"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="mxa-c0-bSv" secondAttribute="trailing" constant="20" id="GSa-Uc-M8T"/>
+                <constraint firstItem="mxa-c0-bSv" firstAttribute="bottom" secondItem="uPE-fz-axI" secondAttribute="bottom" constant="5" id="GaH-wc-JZ3"/>
+                <constraint firstItem="uPE-fz-axI" firstAttribute="top" secondItem="mxa-c0-bSv" secondAttribute="top" constant="5" id="Hhr-Pc-LLy"/>
+                <constraint firstItem="Xid-sQ-ifi" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="JXV-nd-74k"/>
+                <constraint firstItem="Xid-sQ-ifi" firstAttribute="top" secondItem="EPs-ct-X1F" secondAttribute="bottom" id="JeF-sU-Hjr"/>
+                <constraint firstItem="EPs-ct-X1F" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Jhf-No-HNz"/>
+                <constraint firstItem="7rw-ei-wOx" firstAttribute="top" secondItem="mxa-c0-bSv" secondAttribute="bottom" constant="20" id="KXs-SP-bib"/>
+                <constraint firstItem="7rw-ei-wOx" firstAttribute="width" secondItem="mxa-c0-bSv" secondAttribute="width" id="Kkp-NK-NjI"/>
+                <constraint firstItem="uPE-fz-axI" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="dMq-77-3Og"/>
+                <constraint firstAttribute="trailing" secondItem="Xid-sQ-ifi" secondAttribute="trailing" id="iEo-ye-0XY"/>
+                <constraint firstItem="mxa-c0-bSv" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="20" id="nVl-rF-LzY"/>
+                <constraint firstItem="mxa-c0-bSv" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="w98-PS-fqt"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="131.8840579710145" y="107.8125"/>
+        </view>
+    </objects>
+    <resources>
+        <namedColor name="CustomBlack">
+            <color red="0.16862745098039217" green="0.27843137254901962" blue="0.36862745098039218" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="CustomYellow">
+            <color red="1" green="0.83137254901960789" blue="0.23921568627450981" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

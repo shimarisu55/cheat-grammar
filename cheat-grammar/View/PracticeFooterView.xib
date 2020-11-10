@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PracticeFooterView" customModule="cheat_grammar" customModuleProvider="target">
+            <connections>
+                <outlet property="centerButton" destination="u33-6w-pCV" id="eVt-kL-uM5"/>
+                <outlet property="leftButton" destination="LIC-Co-NqD" id="Nte-6S-oHd"/>
+                <outlet property="rightButton" destination="2En-IN-4RY" id="asw-UV-JtA"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="415" height="70"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="FDG-qM-XNG">
+                    <rect key="frame" x="20" y="10" width="374.5" height="50"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LIC-Co-NqD">
+                            <rect key="frame" x="0.0" y="0.0" width="111.5" height="50"/>
+                            <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <state key="normal" title="戻る">
+                                <color key="titleColor" name="CustomBlack"/>
+                            </state>
+                            <connections>
+                                <action selector="tapLeftButton:" destination="-1" eventType="touchUpInside" id="EIH-2P-5pN"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="u33-6w-pCV" userLabel="ヒント">
+                            <rect key="frame" x="131.5" y="0.0" width="111.5" height="50"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <state key="normal" title="解説">
+                                <color key="titleColor" name="CustomBlack"/>
+                            </state>
+                            <connections>
+                                <action selector="tapCenterButton:" destination="-1" eventType="touchUpInside" id="A79-3l-ovp"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2En-IN-4RY" userLabel="練習">
+                            <rect key="frame" x="263" y="0.0" width="111.5" height="50"/>
+                            <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <state key="normal" title="次へ">
+                                <color key="titleColor" name="CustomBlack"/>
+                            </state>
+                            <connections>
+                                <action selector="tapRightButton:" destination="-1" eventType="touchUpInside" id="2cp-nx-zdM"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <viewLayoutGuide key="safeArea" id="6sp-rj-vTA"/>
+                </stackView>
+            </subviews>
+            <color key="backgroundColor" name="CustomBlack"/>
+            <constraints>
+                <constraint firstItem="FDG-qM-XNG" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="20" id="9Ks-tp-vBh"/>
+                <constraint firstItem="FDG-qM-XNG" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="10" id="9VK-ff-UpN"/>
+                <constraint firstAttribute="bottom" secondItem="FDG-qM-XNG" secondAttribute="bottom" constant="10" id="T8a-VM-85z"/>
+                <constraint firstAttribute="trailing" secondItem="FDG-qM-XNG" secondAttribute="trailing" constant="20.5" id="Xbd-eH-mDa"/>
+            </constraints>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="132.60869565217394" y="85.714285714285708"/>
+        </view>
+    </objects>
+    <resources>
+        <namedColor name="CustomBlack">
+            <color red="0.16862745098039217" green="0.27843137254901962" blue="0.36862745098039218" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
