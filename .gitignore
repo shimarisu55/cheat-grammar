@@ -35,5 +35,6 @@ profile
 
 # CocoaPods
 Pods/*
+Podfile.lock
 
 cheat-grammar/GoogleService-Info.plist
