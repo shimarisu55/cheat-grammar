@@ -55,7 +55,6 @@
 		34A69588254E78C60008D212 /* PracticeBaseTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 34A69586254E78C60008D212 /* PracticeBaseTableViewCell.xib */; };
 		34A6958A254E86240008D212 /* AdManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34A69589254E86240008D212 /* AdManager.swift */; };
 		34A6958D255182350008D212 /* AuxiliaryVerbViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34A6958C255182350008D212 /* AuxiliaryVerbViewController.swift */; };
-		34D44278253AD01F00DD4793 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 34D44277253AD01F00DD4793 /* GoogleService-Info.plist */; };
 		34D4427A253AD57E00DD4793 /* AdBannerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 34D44279253AD57E00DD4793 /* AdBannerView.xib */; };
 		34D4427C253AD58D00DD4793 /* AdBannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34D4427B253AD58D00DD4793 /* AdBannerView.swift */; };
 		34FB97BE24EFF13400AFBD04 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34FB97BD24EFF13400AFBD04 /* AppDelegate.swift */; };
@@ -116,7 +115,6 @@
 		34A69586254E78C60008D212 /* PracticeBaseTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PracticeBaseTableViewCell.xib; sourceTree = "<group>"; };
 		34A69589254E86240008D212 /* AdManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdManager.swift; sourceTree = "<group>"; };
 		34A6958C255182350008D212 /* AuxiliaryVerbViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuxiliaryVerbViewController.swift; sourceTree = "<group>"; };
-		34D44277253AD01F00DD4793 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		34D44279253AD57E00DD4793 /* AdBannerView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AdBannerView.xib; sourceTree = "<group>"; };
 		34D4427B253AD58D00DD4793 /* AdBannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdBannerView.swift; sourceTree = "<group>"; };
 		34FB97BA24EFF13400AFBD04 /* 古典文法.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "古典文法.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -322,7 +320,6 @@
 				34FB97C624EFF13500AFBD04 /* Assets.xcassets */,
 				34FB97C824EFF13500AFBD04 /* LaunchScreen.storyboard */,
 				34FB97CB24EFF13500AFBD04 /* Info.plist */,
-				34D44277253AD01F00DD4793 /* GoogleService-Info.plist */,
 			);
 			path = "cheat-grammar";
 			sourceTree = "<group>";
@@ -418,7 +415,6 @@
 				34711D402519F9C7007840B2 /* ExplanationModalViewController.xib in Resources */,
 				34711D2B2519DD44007840B2 /* ChapterBaseViewViewController.xib in Resources */,
 				34711D3C2519F5CE007840B2 /* IntroductionViewController.xib in Resources */,
-				34D44278253AD01F00DD4793 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -649,8 +645,9 @@
 			baseConfigurationReference = 5E194E0BDA6FC6AFEA3C7646 /* Pods-cheat-grammar.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1.0.0;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1.0.2;
 				DEVELOPMENT_TEAM = 5YR2PS8BM3;
 				EXCLUDED_ARCHS = "";
 				INFOPLIST_FILE = "$(SRCROOT)/cheat-grammar/Info.plist";
@@ -662,6 +659,7 @@
 				MARKETING_VERSION = 1.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.cheat-grammar";
 				PRODUCT_NAME = "古典文法";
+				PROVISIONING_PROFILE_SPECIFIER = "cheat-grammar.dist";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -672,8 +670,9 @@
 			baseConfigurationReference = 271EBDE9850DF099BE9BCCC5 /* Pods-cheat-grammar.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1.0.0;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1.0.2;
 				DEVELOPMENT_TEAM = 5YR2PS8BM3;
 				EXCLUDED_ARCHS = "";
 				INFOPLIST_FILE = "$(SRCROOT)/cheat-grammar/Info.plist";
@@ -685,6 +684,7 @@
 				MARKETING_VERSION = 1.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.cheat-grammar";
 				PRODUCT_NAME = "古典文法";
+				PROVISIONING_PROFILE_SPECIFIER = "cheat-grammar.dist";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
