@@ -69,6 +69,7 @@
 		271EBDE9850DF099BE9BCCC5 /* Pods-cheat-grammar.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-cheat-grammar.release.xcconfig"; path = "Target Support Files/Pods-cheat-grammar/Pods-cheat-grammar.release.xcconfig"; sourceTree = "<group>"; };
 		3429E05B253AA0CF00B5A790 /* ReTestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReTestViewController.swift; sourceTree = "<group>"; };
 		3429E060253AC6D200B5A790 /* ResultTestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultTestViewController.swift; sourceTree = "<group>"; };
+		343FA70225612712009ADB83 /* 古典文法.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "古典文法.entitlements"; sourceTree = "<group>"; };
 		34711D282519DD44007840B2 /* ChapterBaseViewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChapterBaseViewViewController.swift; sourceTree = "<group>"; };
 		34711D292519DD44007840B2 /* ChapterBaseViewViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChapterBaseViewViewController.xib; sourceTree = "<group>"; };
 		34711D2D2519DEA0007840B2 /* ChapterBaseTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChapterBaseTableViewCell.swift; sourceTree = "<group>"; };
@@ -311,6 +312,7 @@
 		34FB97BC24EFF13400AFBD04 /* cheat-grammar */ = {
 			isa = PBXGroup;
 			children = (
+				343FA70225612712009ADB83 /* 古典文法.entitlements */,
 				34FB97BD24EFF13400AFBD04 /* AppDelegate.swift */,
 				34FB97BF24EFF13400AFBD04 /* SceneDelegate.swift */,
 				34FB97D124EFF22000AFBD04 /* Controller */,
@@ -645,6 +647,7 @@
 			baseConfigurationReference = 5E194E0BDA6FC6AFEA3C7646 /* Pods-cheat-grammar.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "cheat-grammar/古典文法.entitlements";
 				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1.0.2;
@@ -670,6 +673,7 @@
 			baseConfigurationReference = 271EBDE9850DF099BE9BCCC5 /* Pods-cheat-grammar.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "cheat-grammar/古典文法.entitlements";
 				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1.0.2;
