@@ -32,6 +32,15 @@ class IntroductionViewController: UIViewController {
         adBannerView.bannerView.rootViewController = self
         setupInfo()
     }
+    // 広告バナービューの高さ設定
+    override func viewWillTransition(to size: CGSize,
+                            with coordinator: UIViewControllerTransitionCoordinator) {
+      super.viewWillTransition(to:size, with:coordinator)
+      coordinator.animate(alongsideTransition: { [weak self] _ in
+        guard let weakSelf = self else { return }
+        weakSelf.adBannerView.loadBannerAd(viewFrame: weakSelf.view)
+      })
+    }
     
     private func setupInfo() {
         guard let introQuestion = question else { return }

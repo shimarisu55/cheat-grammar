@@ -52,11 +52,11 @@
                     </constraints>
                     <viewLayoutGuide key="safeArea" id="cyc-PG-f79"/>
                 </view>
-                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Xid-sQ-ifi" customClass="AdBannerView" customModule="cheat_grammar" customModuleProvider="target">
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Xid-sQ-ifi" customClass="AdBannerView" customModule="古典文法" customModuleProvider="target">
                     <rect key="frame" x="0.0" y="802" width="414" height="60"/>
                     <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                     <constraints>
-                        <constraint firstAttribute="height" constant="60" id="QvL-dy-SUt"/>
+                        <constraint firstAttribute="height" priority="250" constant="60" id="QvL-dy-SUt"/>
                     </constraints>
                 </view>
             </subviews>

@@ -36,4 +36,18 @@ class AdBannerView: UIView {
         bannerView.load(GADRequest())
     }
     
+    /// アダプティブバナー、広告バナーの高さ最適化
+    func loadBannerAd(viewFrame: UIView) {
+        let frame = { () -> CGRect in
+          if #available(iOS 11.0, *) {
+            return viewFrame.frame.inset(by: viewFrame.safeAreaInsets)
+          } else {
+            return viewFrame.frame
+          }
+        }()
+        let viewWidth = frame.size.width
+        bannerView.adSize = GADCurrentOrientationAnchoredAdaptiveBannerAdSizeWithWidth(viewWidth)
+        bannerView.load(GADRequest())
+    }
+    
 }

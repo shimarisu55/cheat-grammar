@@ -35,6 +35,15 @@ class PracticeViewController: UIViewController {
         prepareNaviBarItem()
     }
     
+    override func viewWillTransition(to size: CGSize,
+                            with coordinator: UIViewControllerTransitionCoordinator) {
+      super.viewWillTransition(to:size, with:coordinator)
+      coordinator.animate(alongsideTransition: { [weak self] _ in
+        guard let weakSelf = self else { return }
+        weakSelf.adBannerView.loadBannerAd(viewFrame: weakSelf.view)
+      })
+    }
+    
     private func prepareNaviBarItem() {
         let backButtonItem = UIBarButtonItem(title: "終了", style: .done, target: self, action: #selector(backBarButtonTapped(_:)))
         navigationItem.leftBarButtonItem = backButtonItem
