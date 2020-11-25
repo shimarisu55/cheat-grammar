@@ -29,8 +29,26 @@ class FirebaseDBFetcher {
         }
     }
     
-    func fetchTestDocuments(testIdentifer: String, completion: @escaping ([TestQuizEntity]?) -> Swift.Void) {
+    /// 該当のデータを呼ぶ(practice)
+    func fetchPracticeDocuments(testIdentifer: String, completion: @escaping ([TestQuizEntity]?) -> Swift.Void) {
         firestore.collection("practice").whereField("testIdentifer", isEqualTo: testIdentifer).order(by: "problemNo", descending: false).getDocuments() { (querySnapshot, error) in
+            if let error = error {
+                print("Error getting documents: \(error)")
+                completion(nil)
+            } else {
+                var testQuizEntities = [TestQuizEntity]()
+                for query in querySnapshot!.documents {
+                    let testQuizEntity = TestQuizEntity(dictionary: query.data())
+                    testQuizEntities.append(testQuizEntity)
+                }
+                completion(testQuizEntities)
+            }
+        }
+    }
+    
+    /// 該当のデータを呼ぶ(rehearsal)
+    func fetchRehearsalDocuments(testIdentifer: String, completion: @escaping ([TestQuizEntity]?) -> Swift.Void) {
+        firestore.collection("rehearsal").whereField("testIdentifer", isEqualTo: testIdentifer).order(by: "problemNo", descending: false).getDocuments() { (querySnapshot, error) in
             if let error = error {
                 print("Error getting documents: \(error)")
                 completion(nil)

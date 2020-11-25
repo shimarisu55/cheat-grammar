@@ -1,5 +1,5 @@
 //
-//  AuxiliaryVerbViewController.swift
+//  AuxiliaryVerbChapterViewController.swift
 //  cheat-grammar
 //
 //  Created by 野中志保 on 2020/11/03.
@@ -11,21 +11,30 @@ import UIKit
 
 enum AuxiliaryVerbChapter: String {
     case zuKeriKi
-    case verbColumn
-    case verbType
-    case verbFormFirst
-    case verbFormSecond
+    case tsuNuTariRi
+    case muBeshi
+    case jiMaji
+    case ramuKemu
+    case ruRaruSuSasuShimu
+    case nariTari
+    case masiMeriNariRashiGotoshi
+    case mahoshiTashi
 }
 
-class AuxiliaryVerbViewController: ChapterBaseViewViewController {
+class AuxiliaryVerbChapterViewController: ChapterBaseViewViewController {
     
     init() {
         super.init(titleArray:
             ["「ず」「けり」「き」",
-             "活用の行",
-             "活用の種類",
-             "活用形(1)",
-             "活用形(2)"],
+             "「つ」「ぬ」「たり」「り」",
+             "「む(むず)」「べし」",
+             "「じ」「まじ」",
+             "「らむ」「けむ」",
+             "「る」「らる」「す」「さす」「しむ」",
+             "「なり」「たり」",
+             "「まし」「めり」「なり」「らし」「ごとし」",
+             "「まほし」「たし」"
+            ],
             testIdentifer:nil)
     }
     

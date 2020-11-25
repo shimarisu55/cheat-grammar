@@ -9,6 +9,10 @@
 /* Begin PBXBuildFile section */
 		3429E05C253AA0CF00B5A790 /* ReTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3429E05B253AA0CF00B5A790 /* ReTestViewController.swift */; };
 		3429E062253AC6D200B5A790 /* ResultTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3429E060253AC6D200B5A790 /* ResultTestViewController.swift */; };
+		343FA706256A2BAB009ADB83 /* FrontCoverViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 343FA705256A2BAB009ADB83 /* FrontCoverViewController.xib */; };
+		343FA709256A40D9009ADB83 /* RehearsalTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 343FA707256A40D9009ADB83 /* RehearsalTableViewCell.swift */; };
+		343FA70A256A40D9009ADB83 /* RehearsalTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 343FA708256A40D9009ADB83 /* RehearsalTableViewCell.xib */; };
+		343FA70C256A4D22009ADB83 /* PrefaceRehearsalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 343FA70B256A4D22009ADB83 /* PrefaceRehearsalViewController.swift */; };
 		34711D2A2519DD44007840B2 /* ChapterBaseViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34711D282519DD44007840B2 /* ChapterBaseViewViewController.swift */; };
 		34711D2B2519DD44007840B2 /* ChapterBaseViewViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 34711D292519DD44007840B2 /* ChapterBaseViewViewController.xib */; };
 		34711D2F2519DEA0007840B2 /* ChapterBaseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34711D2D2519DEA0007840B2 /* ChapterBaseTableViewCell.swift */; };
@@ -54,7 +58,7 @@
 		34A69587254E78C60008D212 /* PracticeBaseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34A69585254E78C60008D212 /* PracticeBaseTableViewCell.swift */; };
 		34A69588254E78C60008D212 /* PracticeBaseTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 34A69586254E78C60008D212 /* PracticeBaseTableViewCell.xib */; };
 		34A6958A254E86240008D212 /* AdManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34A69589254E86240008D212 /* AdManager.swift */; };
-		34A6958D255182350008D212 /* AuxiliaryVerbViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34A6958C255182350008D212 /* AuxiliaryVerbViewController.swift */; };
+		34A6958D255182350008D212 /* AuxiliaryVerbChapterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34A6958C255182350008D212 /* AuxiliaryVerbChapterViewController.swift */; };
 		34D4427A253AD57E00DD4793 /* AdBannerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 34D44279253AD57E00DD4793 /* AdBannerView.xib */; };
 		34D4427C253AD58D00DD4793 /* AdBannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34D4427B253AD58D00DD4793 /* AdBannerView.swift */; };
 		34FB97BE24EFF13400AFBD04 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34FB97BD24EFF13400AFBD04 /* AppDelegate.swift */; };
@@ -70,6 +74,10 @@
 		3429E05B253AA0CF00B5A790 /* ReTestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReTestViewController.swift; sourceTree = "<group>"; };
 		3429E060253AC6D200B5A790 /* ResultTestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultTestViewController.swift; sourceTree = "<group>"; };
 		343FA70225612712009ADB83 /* 古典文法.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "古典文法.entitlements"; sourceTree = "<group>"; };
+		343FA705256A2BAB009ADB83 /* FrontCoverViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FrontCoverViewController.xib; sourceTree = "<group>"; };
+		343FA707256A40D9009ADB83 /* RehearsalTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RehearsalTableViewCell.swift; sourceTree = "<group>"; };
+		343FA708256A40D9009ADB83 /* RehearsalTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RehearsalTableViewCell.xib; sourceTree = "<group>"; };
+		343FA70B256A4D22009ADB83 /* PrefaceRehearsalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrefaceRehearsalViewController.swift; sourceTree = "<group>"; };
 		34711D282519DD44007840B2 /* ChapterBaseViewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChapterBaseViewViewController.swift; sourceTree = "<group>"; };
 		34711D292519DD44007840B2 /* ChapterBaseViewViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChapterBaseViewViewController.xib; sourceTree = "<group>"; };
 		34711D2D2519DEA0007840B2 /* ChapterBaseTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChapterBaseTableViewCell.swift; sourceTree = "<group>"; };
@@ -115,7 +123,7 @@
 		34A69585254E78C60008D212 /* PracticeBaseTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PracticeBaseTableViewCell.swift; sourceTree = "<group>"; };
 		34A69586254E78C60008D212 /* PracticeBaseTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PracticeBaseTableViewCell.xib; sourceTree = "<group>"; };
 		34A69589254E86240008D212 /* AdManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdManager.swift; sourceTree = "<group>"; };
-		34A6958C255182350008D212 /* AuxiliaryVerbViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuxiliaryVerbViewController.swift; sourceTree = "<group>"; };
+		34A6958C255182350008D212 /* AuxiliaryVerbChapterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuxiliaryVerbChapterViewController.swift; sourceTree = "<group>"; };
 		34D44279253AD57E00DD4793 /* AdBannerView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AdBannerView.xib; sourceTree = "<group>"; };
 		34D4427B253AD58D00DD4793 /* AdBannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdBannerView.swift; sourceTree = "<group>"; };
 		34FB97BA24EFF13400AFBD04 /* 古典文法.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "古典文法.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -153,6 +161,9 @@
 			isa = PBXGroup;
 			children = (
 				34FB97D224EFF24500AFBD04 /* FrontCoverViewController.swift */,
+				343FA705256A2BAB009ADB83 /* FrontCoverViewController.xib */,
+				343FA707256A40D9009ADB83 /* RehearsalTableViewCell.swift */,
+				343FA708256A40D9009ADB83 /* RehearsalTableViewCell.xib */,
 				34711D2C2519DE79007840B2 /* ChapterBaseView */,
 				34711D41251B5C55007840B2 /* SpellingChapter */,
 				34711D312519EE74007840B2 /* VerbChapter */,
@@ -169,6 +180,14 @@
 				34711D8325340649007840B2 /* Test */,
 			);
 			path = Practice;
+			sourceTree = "<group>";
+		};
+		343FA70D256A4D2C009ADB83 /* Rehearsal */ = {
+			isa = PBXGroup;
+			children = (
+				343FA70B256A4D22009ADB83 /* PrefaceRehearsalViewController.swift */,
+			);
+			path = Rehearsal;
 			sourceTree = "<group>";
 		};
 		34711D2C2519DE79007840B2 /* ChapterBaseView */ = {
@@ -286,7 +305,7 @@
 		34A6958B255182060008D212 /* AuxiliaryVerb */ = {
 			isa = PBXGroup;
 			children = (
-				34A6958C255182350008D212 /* AuxiliaryVerbViewController.swift */,
+				34A6958C255182350008D212 /* AuxiliaryVerbChapterViewController.swift */,
 			);
 			path = AuxiliaryVerb;
 			sourceTree = "<group>";
@@ -331,6 +350,7 @@
 			children = (
 				3429E05E253AA7D400B5A790 /* Chapter */,
 				3429E05F253AA82100B5A790 /* Practice */,
+				343FA70D256A4D2C009ADB83 /* Rehearsal */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -409,6 +429,8 @@
 				34711D6A25281CD2007840B2 /* ExampleQuestionView.xib in Resources */,
 				34D4427A253AD57E00DD4793 /* AdBannerView.xib in Resources */,
 				34FB97CA24EFF13500AFBD04 /* LaunchScreen.storyboard in Resources */,
+				343FA70A256A40D9009ADB83 /* RehearsalTableViewCell.xib in Resources */,
+				343FA706256A2BAB009ADB83 /* FrontCoverViewController.xib in Resources */,
 				34A69588254E78C60008D212 /* PracticeBaseTableViewCell.xib in Resources */,
 				34A50F46254421C7008EA166 /* InterludeBaseViewController.xib in Resources */,
 				34FB97C724EFF13500AFBD04 /* Assets.xcassets in Resources */,
@@ -479,6 +501,7 @@
 				3487097C25550DB8000DB15E /* BasicWordSecondViewController.swift in Sources */,
 				34711D7D253327AB007840B2 /* VerbFormFirstViewController.swift in Sources */,
 				34711D2F2519DEA0007840B2 /* ChapterBaseTableViewCell.swift in Sources */,
+				343FA70C256A4D22009ADB83 /* PrefaceRehearsalViewController.swift in Sources */,
 				34711D7B25316C43007840B2 /* ThirdIntroQuestionViewController.swift in Sources */,
 				34711D7725315909007840B2 /* FirstIntroQuestionViewController.swift in Sources */,
 				34D4427C253AD58D00DD4793 /* AdBannerView.swift in Sources */,
@@ -498,6 +521,7 @@
 				34888AFE253C410900989BC4 /* VerbFormSecondViewController.swift in Sources */,
 				3429E062253AC6D200B5A790 /* ResultTestViewController.swift in Sources */,
 				34711D332519EEE3007840B2 /* BasicWordFirstViewController.swift in Sources */,
+				343FA709256A40D9009ADB83 /* RehearsalTableViewCell.swift in Sources */,
 				34711D53251CC153007840B2 /* PrefaceIntroductionViewController.swift in Sources */,
 				34711D57251CC672007840B2 /* UILabel+Accent.swift in Sources */,
 				34711D372519F31B007840B2 /* PracticeViewController.swift in Sources */,
@@ -505,7 +529,7 @@
 				34711D75252F45DD007840B2 /* VerbTypeViewController.swift in Sources */,
 				34711D4E251B7AFB007840B2 /* QuestionEntity.swift in Sources */,
 				34FB97C024EFF13400AFBD04 /* SceneDelegate.swift in Sources */,
-				34A6958D255182350008D212 /* AuxiliaryVerbViewController.swift in Sources */,
+				34A6958D255182350008D212 /* AuxiliaryVerbChapterViewController.swift in Sources */,
 				34711D5C251F17F3007840B2 /* GoalPracticeViewController.swift in Sources */,
 				34A69587254E78C60008D212 /* PracticeBaseTableViewCell.swift in Sources */,
 				34A50F3B253C5915008EA166 /* AdjectiveViewController.swift in Sources */,
@@ -624,6 +648,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -650,7 +675,7 @@
 				CODE_SIGN_ENTITLEMENTS = "cheat-grammar/古典文法.entitlements";
 				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 1.0.2;
+				CURRENT_PROJECT_VERSION = 1.0.3;
 				DEVELOPMENT_TEAM = 5YR2PS8BM3;
 				EXCLUDED_ARCHS = "";
 				INFOPLIST_FILE = "$(SRCROOT)/cheat-grammar/Info.plist";
@@ -676,7 +701,7 @@
 				CODE_SIGN_ENTITLEMENTS = "cheat-grammar/古典文法.entitlements";
 				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 1.0.2;
+				CURRENT_PROJECT_VERSION = 1.0.3;
 				DEVELOPMENT_TEAM = 5YR2PS8BM3;
 				EXCLUDED_ARCHS = "";
 				INFOPLIST_FILE = "$(SRCROOT)/cheat-grammar/Info.plist";

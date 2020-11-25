@@ -9,7 +9,6 @@
 import Foundation
 
 class QuestionEntity {
-    let chapterTitle: String
     let paragraph: String
     let title: String
     let introQuiz: String
@@ -42,7 +41,6 @@ class QuestionEntity {
     let choice3: [String]
     
     init(dictionary: [String: Any]) {
-        chapterTitle = dictionary["chapterTitle"] as! String
         paragraph = dictionary["paragraph"] as! String
         title = dictionary["title"] as! String
         introQuiz = dictionary["introQuiz"] as! String
